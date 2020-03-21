@@ -1,0 +1,20 @@
+<ion-content>
+  <div class="banner">
+    <p>我的</p>
+  </div>
+  <div class="content-card" padding>
+    <div class="info">
+      <div><img src="../../assets/icon/account.svg"></div>
+      <p>账号</p><span>{{account}}</span>
+    </div>
+    <div class="info">
+      <div><img src="../../assets/icon/name.svg"></div>
+      <p>姓名</p><span>{{name}}</span>
+    </div>
+    <div class="info">
+      <div><img src="../../assets/icon/mobile.svg"></div>
+      <p>手机</p><span>{{mobile}}</span>
+    </div>
+    <div class="btn" (click)="logout()">注销</div>
+  </div>
+</ion-content>

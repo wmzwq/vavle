@@ -1,0 +1,16 @@
+<svg id="Lock" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-2 {
+        fill: #cbcad2;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <rect id="矩形_118" data-name="矩形 118" class="cls-1" width="14" height="14"/>
+  <path id="路径_49" data-name="路径 49" class="cls-2" d="M6,7A1.75,1.75,0,1,1,4.286,8.75,1.738,1.738,0,0,1,6,7ZM6,1.75A1.738,1.738,0,0,0,4.286,3.5H7.714A1.738,1.738,0,0,0,6,1.75ZM10.286,14H1.714A1.738,1.738,0,0,1,0,12.25v-7A1.738,1.738,0,0,1,1.714,3.5h.857A3.475,3.475,0,0,1,6,0,3.475,3.475,0,0,1,9.429,3.5h.857A1.738,1.738,0,0,1,12,5.25v7A1.738,1.738,0,0,1,10.286,14Z" transform="translate(1)"/>
+</svg>

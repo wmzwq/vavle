@@ -1,0 +1,59 @@
+page-alarm {
+
+  .content-ios,
+  .content-md {
+    background-color: #F2F3F7;
+  }
+
+  .toolbar-background-ios,
+  .toolbar-background-md {
+    background-color: #234F9D;
+  }
+
+  .toolbar-title-ios,
+  .toolbar-title-md {
+    color: white;
+    font-size: 1.6rem;
+  }
+
+  .alarm {
+    width: 100%;
+    padding: 4px 16px;
+    border-radius: 10px;
+    background-color: #fff;
+    margin-bottom: 16px;
+    position: relative;
+  }
+
+  .row {
+    border-bottom: 1px solid #E5E5E5;
+    padding: 4px 0;
+    font-size: 1.2rem;
+  }
+
+  .row:last-child {
+    border-bottom: none;
+  }
+
+  ion-col p {
+    color: #BDBDBD;
+    margin: 0 0 4px 0;
+  }
+
+  ion-col span {
+    color: #333;
+  }
+
+  .dispose {
+    position: absolute;
+    right: 16px;
+    top: 16px;
+    width: 74px;
+    line-height: 30px;
+    border-radius: 24px;
+    background-color: #79AEF7;
+    color: white;
+    font-size: 1.2rem;
+    text-align: center;
+  }
+}

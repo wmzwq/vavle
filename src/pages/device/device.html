@@ -1,0 +1,79 @@
+<ion-content>
+  <div class="banner">
+    <div class="back" (click)="back()"><img src="assets/imgs/back.svg"></div>
+    <p>设备列表</p>
+  </div>
+  <div class="content-card" padding>
+    <div class="device" *ngFor="let item of deviceList" (click)="gotoDetails(item)">
+      <div class="info">
+        <img src="../../assets/icon/device.svg"><span>{{item.F_AccountName}}</span>
+      </div>
+      <div class="info">
+        <img src="../../assets/icon/places.svg"><span>{{item.F_AccountAddness}}</span>
+      </div>
+      <div class="alarm"> <span></span>
+        <p>{{item.F_AccountTypeName}}</p>
+      </div>
+      <span class="divider"><span></span></span>
+      <ul class="status">
+        <li *ngIf="item.F_AccountType==0">
+          <img src="../../assets/icon/dot.svg"><span *ngIf="item.F_ScadaEntity!=null">{{item.F_ScadaEntity.CH4}}</span>
+          <p>甲烷</p>
+        </li>
+        <li *ngIf="item.F_AccountType==0">
+          <img src="../../assets/icon/dot.svg"><span *ngIf="item.F_ScadaEntity!=null">{{item.F_ScadaEntity.H2S}}</span>
+          <p>硫化氢</p>
+        </li>
+        <li *ngIf="item.F_AccountType==0||item.F_AccountType==3">
+          <img src="../../assets/icon/dot.svg"><span *ngIf="item.F_ScadaEntity!=null">{{item.F_ScadaEntity.F_Temperature}}</span>
+          <p>温度</p>
+        </li>
+        <li *ngIf="item.F_AccountType==3">
+          <img src="../../assets/icon/dot.svg"><span *ngIf="item.F_ScadaEntity!=null">{{item.F_ScadaEntity.F_Humidity}}</span>
+          <p>湿度</p>
+        </li>
+        <li *ngIf="item.F_AccountType==0&&item.F_ScadaEntity.MC==1">
+          <img src="../../assets/icon/dot.svg"><span *ngIf="item.F_ScadaEntity!=null">异常</span>
+          <p>井盖异动</p>
+        </li>
+        <li *ngIf="item.F_AccountType==0&&item.F_ScadaEntity.MC==0">
+          <img src="../../assets/icon/dot.svg"><span *ngIf="item.F_ScadaEntity!=null">正常</span>
+          <p>井盖异动</p>
+        </li>
+        <li *ngIf="item.F_AccountType==5">
+          <img src="../../assets/icon/dot.svg"><span *ngIf="item.F_ScadaEntity!=null">{{(item.F_ScadaEntity.F_Pressure2).toFixed(1)}}</span>
+          <p>压力2</p>
+        </li>
+        <li *ngIf="item.F_AccountType==5">
+          <img src="../../assets/icon/dot.svg"><span *ngIf="item.F_ScadaEntity!=null">{{(item.F_ScadaEntity.F_Pressure).toFixed(1)}}</span>
+          <p>压力1</p>
+        </li>
+        <li *ngIf="item.F_AccountType==5">
+          <img src="../../assets/icon/dot.svg"><span *ngIf="item.F_ScadaEntity!=null" >{{(item.F_ScadaEntity.F_ActuatorLocation).toFixed(1)}}</span>
+          <p>执行器位置</p>
+        </li>
+        <li *ngIf="item.F_AccountType==5">
+          <img src="../../assets/icon/dot.svg"><span *ngIf="item.F_ScadaEntity!=null">{{(item.F_ScadaEntity.F_BatteryVoltage).toFixed(1)}}</span>
+          <p>电池电压</p>
+        </li>
+        <li *ngIf="item.F_AccountType==5">
+          <img src="../../assets/icon/dot.svg"><span *ngIf="item.F_ScadaEntity!=null">{{(item.F_ScadaEntity.F_InputVoltage).toFixed(1)}}</span>
+          <p>输入电压</p>
+        </li>
+        <li *ngIf="item.F_AccountType==1">
+        <ng-container *ngIf="item.F_ScadaEntity!=null&&item.F_ScadaEntity.F_ActuatorLocation==1">
+            <img src="../../assets/icon/dot.svg"><span >打开</span>
+            <p>开关状态</p>            
+         </ng-container>
+          </li>
+          <li *ngIf="item.F_AccountType==1">
+            <ng-container *ngIf="item.F_ScadaEntity!=null&&item.F_ScadaEntity.F_ActuatorLocation==0">
+            <img src="../../assets/icon/dot.svg"><span >关闭</span>
+            <p>开关状态</p>
+          </ng-container>
+          </li>
+      </ul>
+      
+    </div>
+  </div>
+</ion-content>

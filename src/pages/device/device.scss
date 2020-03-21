@@ -1,0 +1,143 @@
+page-device {
+
+  .content-ios,
+  .content-md {
+    background-color: #F2F3F7;
+  }
+
+  .banner,
+  .device,
+  .info,
+  .status,
+  .alarm {
+    display: flex;
+  }
+
+  .banner p,
+  .device button,
+  li p {
+    font-size: 1.6rem;
+  }
+
+  .alarm,li p , li span{
+    font-size: 1.2rem;
+  }
+
+  span {
+    margin-top: 2px;
+    display: inline-block;
+  }
+
+  .banner {
+    background: url(../../assets/imgs/banner.svg) #234F9D no-repeat;
+    height: 30%;
+  }
+
+  .banner p {
+    color: white;
+    font-weight: bold;
+    margin: 32px auto;
+  }
+  .back{
+    width: 22px;
+    height: 22px;
+    position: absolute;
+    margin: 32px 16px;
+  }
+  .content-card {
+    background-color: #F2F3F7;
+    width: 100%;
+    height: 86%;
+    position: absolute;
+    bottom: 0;
+    border-radius: 26px 26px 0 0;
+  }
+
+  .device {
+    width: 100%;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 12px 20px;
+    margin-bottom: 16px;
+    position: relative;
+    flex-wrap: wrap;
+    align-content: flex-start;
+  }
+
+  .info {
+    width: 72%;
+    color: #333;
+  }
+
+  .info img {
+    width: 28px;
+    height: 28px;
+  }
+
+  .info:nth-child(2) {
+    margin-top: 4px;
+  }
+
+  .info:nth-child(2) span {
+    color: #707070;
+  }
+
+  .alarm {
+    position: absolute;
+    top: 20px;
+    right: 8px;
+    width: 96px;
+    line-height: 32px;
+    color: #F76C1B;
+  }
+
+  .alarm span {
+    width: 2px;
+    height: 40px;
+    margin: 0 8px;
+    background-color: #F1F1F1;
+  }
+
+  .alarm p {
+    line-height: 20px;
+  }
+
+  .divider {
+    width: 100%;
+    height: 1px;
+    margin-top: 8px;
+    border-bottom: 2px solid #7FA1C5;
+  }
+
+  .divider span {
+    width: 8px;
+    height: 8px;
+    background-color: #7FA1C5;
+    float: right;
+    border-radius: 4px;
+    margin-top: -3px;
+  }
+
+  .status {
+    width: 100%;
+    padding: 14px 0 0;
+    margin: 0;
+    justify-content: space-between;
+  }
+
+  .status li {
+    list-style: none;
+    float: left;
+    color: #707070;
+  }
+
+  li p {
+    text-align: center;
+    margin: 2px 0;
+  }
+
+  li img {
+    margin-right: 4px;
+  }
+ 
+}

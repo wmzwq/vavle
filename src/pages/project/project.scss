@@ -1,0 +1,159 @@
+page-project {
+  .content-ios,
+  .content-md {
+    background-color: #F2F3F7;
+  }
+  .banner, .project, .info, .status{
+    display: flex;
+  }
+  .banner p, .project button, li p{
+    font-size: 1.6rem;
+  }
+  .banner {
+    background: url(../../assets/imgs/banner.svg) #234F9D no-repeat;
+    height: 30%;
+  }
+
+  .banner p {
+    color: white;
+    font-weight: bold;
+    margin: 32px auto;
+  }
+
+  .content-card {
+    background-color: #F2F3F7;
+    width: 100%;
+    height: 86%;
+    position: absolute;
+    bottom: 0;
+    border-radius: 26px 26px 0 0;
+    padding: 40px 16px 0;
+  }
+
+  .project {
+    width: 100%;
+    background-color: #fff;
+    border-radius: 10px;
+    margin-bottom: 16px;
+    padding: 12px 20px;
+    position: relative;
+    flex-wrap: wrap;
+    align-content: flex-start;
+  }
+
+  .info {
+    width: 72%;
+    color: #333;
+  }
+
+  .info img {
+    width: 28px;
+    height: 28px;
+  }
+  .info:nth-child(2){
+    margin-top: 4px;
+  }
+  .info:nth-child(2) span {
+    color: #707070;
+  }
+
+  .project button {
+    position: absolute;
+    top: 20px;
+    right: 16px;
+    width: 80px;
+    line-height: 32px;
+    color: #4C699C;
+    border-radius: 24px;
+    background-color: rgba(160, 184, 212, .4);
+  }
+
+  .divider {
+    display: inline-block;
+    width: 100%;
+    height: 1px;
+    margin-top:8px;
+    border-bottom: 1px dashed #b1b1b1;
+  }
+
+  .status{
+    width: 100%;
+    padding: 8px 34px 0;
+    margin: 0;
+    justify-content: space-between;
+  }
+  .status li{
+    list-style: none;
+    float: left;
+    color: #707070;
+  }
+  li p{
+    text-align: center;
+    margin: 2px 0;
+  }
+  li span{
+    font-size: 1.2rem;
+  }
+
+  .switch-btn{
+    position: absolute;
+    top: -32px;
+    right: 32px;
+    width: 58px;
+    height: 58px;
+    border-radius: 30px;
+    box-shadow: 0 3px 8px #8AABF5;
+    background-color: #759FF5;
+    display: flex;
+  }
+  .switch-btn img{
+    margin: auto;
+  }
+  .messagebar {
+    bottom: 9px;
+    height: 50px;
+    left: 50px;
+    right: 50px;
+    position: absolute;
+    border-radius: 5px;
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+}
+.messagebar button {
+  position: absolute;
+  top: 10px;
+  right: 16px;
+  width: 80px;
+  line-height: 32px;
+  color: #4C699C;
+  border-radius: 24px;
+  background-color: rgba(160, 184, 212, .4);
+}
+.maptool2 {
+  position: absolute;
+  bottom: 18px;
+  left:22px;
+  border-radius: initial;
+    box-shadow: initial;
+}
+.Button-up{
+    border: 1px solid rgba(255,255,255,0.5);
+    width: 33px;
+    height: 33px;
+    background-color: #F1FAF5;
+}
+.Button-down{
+  border: 1px solid rgba(255,255,255,0.5);
+  width: 33px;
+  height: 33px;
+  background-color:#F1FAF5;
+}
+.up{
+  border: 1px solid rgba(255,255,255,0.5);
+  background-size: 14px 15px;
+  width: 35px;
+  height: 35px;
+  background-color: #F1FAF5;
+
+}
+}

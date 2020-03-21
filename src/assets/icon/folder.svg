@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="28" height="24.013" viewBox="0 0 28 24.013">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #3792df;
+      }
+
+      .cls-2 {
+        fill: none;
+      }
+
+      .cls-3 {
+        filter: url(#路径_178);
+      }
+    </style>
+    <filter id="路径_178" x="0" y="0" width="28" height="24.013" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feFlood flood-color="#b8deff"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Folder" transform="translate(6 1)">
+    <g class="cls-3" transform="matrix(1, 0, 0, 1, -6, -1)">
+      <path id="路径_178-2" data-name="路径 178" class="cls-1" d="M0,10.926V.984A1.022,1.022,0,0,1,.311.259.984.984,0,0,1,.984,0H6.731a.588.588,0,0,1,.414.155.7.7,0,0,1,.311.362l.518,1.45h6.99a1.022,1.022,0,0,1,.725.311A.94.94,0,0,1,16,3v7.974a1.022,1.022,0,0,1-.311.725.94.94,0,0,1-.725.311H.984A1.022,1.022,0,0,1,.259,11.7,1.4,1.4,0,0,1,0,10.926Z" transform="translate(6 3)"/>
+    </g>
+    <rect id="矩形_1447" data-name="矩形 1447" class="cls-2" width="16" height="16"/>
+  </g>
+</svg>

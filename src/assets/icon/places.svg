@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25.184" height="28" viewBox="0 0 25.184 28">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-2 {
+        fill: #3792df;
+        fill-rule: evenodd;
+      }
+
+      .cls-3 {
+        filter: url(#路径_114);
+      }
+    </style>
+    <filter id="路径_114" x="0" y="0" width="25.184" height="28" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feFlood flood-color="#b8deff"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Places" transform="translate(5 3)">
+    <rect id="矩形_305" data-name="矩形 305" class="cls-1" width="16" height="16" transform="translate(0 0)"/>
+    <g class="cls-3" transform="matrix(1, 0, 0, 1, -5, -3)">
+      <path id="路径_114-2" data-name="路径 114" class="cls-2" d="M6.58,9.47A2.786,2.786,0,0,0,9.371,6.679,2.872,2.872,0,0,0,6.58,3.788,2.786,2.786,0,0,0,3.788,6.579,2.942,2.942,0,0,0,6.58,9.47ZM1.894,1.894a6.626,6.626,0,0,1,9.371,9.371L6.58,15.95,1.894,11.265A6.807,6.807,0,0,1,1.894,1.894Z" transform="translate(5.97 3.05)"/>
+    </g>
+  </g>
+</svg>

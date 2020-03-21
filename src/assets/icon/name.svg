@@ -1,0 +1,15 @@
+<svg id="Compose" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-2 {
+        fill: #2699fb;
+      }
+    </style>
+  </defs>
+  <rect id="矩形_324" data-name="矩形 324" class="cls-1" width="16" height="16"/>
+  <path id="路径_110" data-name="路径 110" class="cls-2" d="M8.154,3.077,2.462,8.923,0,16l7.077-2.308L12.769,8Zm7.231-.462-2-2a1.865,1.865,0,0,0-2.769,0L8.923,2.308l4.615,4.769,1.846-1.846A1.95,1.95,0,0,0,16,3.846,1.9,1.9,0,0,0,15.385,2.615Z"/>
+</svg>

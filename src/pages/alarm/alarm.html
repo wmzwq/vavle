@@ -1,0 +1,49 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>今日报警</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding>
+    <div id="default" style="display:none;text-align: center;margin-top: 138px;">
+        <img src="assets/imgs/no.png" class="no">
+        <p style="color:#5C6784;font-size: 18px ">当前状态良好，暂无报警</p>
+      </div>
+<div *ngFor="let item of policeList">
+  <ion-grid class="alarm"> 
+  <div class="dispose" (click)="disposal(item)" *ngIf="item.F_AlarmRemove==0" id="disposal">处置</div>
+  <div class="dispose" style="color:black !important;background-color: white" *ngIf="item.F_AlarmRemove==1">已处置</div>
+    <ion-row>
+      <ion-col col-9>
+        <p>报警内容</p><span>{{(item.F_FaultContent)+'\xa0'+(item.F_FaultReason)}}</span>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col col-6>
+        <p>设备编号</p><span>{{item.F_DeviceId}}</span>
+      </ion-col>
+      <ion-col col-6 *ngIf="item.F_AlarmRemove==1">
+        <p>处置状态</p><span>已处置</span>
+      </ion-col>
+      <ion-col col-6 *ngIf="item.F_AlarmRemove==0">
+          <p>处置状态</p><span>未处置</span>
+        </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col col-6>
+        <p>报警时间</p><span>{{item.F_Date}}</span>
+      </ion-col>
+      <ion-col col-6>
+        <p>处置时间</p><span>{{item.F_DeviceId}}</span>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col col-6>
+        <p>所属单位</p><span>{{item.F_Address}}</span>
+      </ion-col>
+      <ion-col col-6>
+        <p>报警值</p><span>{{(item.F_FaultNumerical).toFixed(1)}}</span>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</div>
+</ion-content>

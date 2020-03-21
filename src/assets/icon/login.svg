@@ -1,0 +1,10 @@
+<svg id="Forward_arrow" data-name="Forward arrow" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <path id="路径_10" data-name="路径 10" class="cls-1" d="M12,0,9.818,2.182l8.26,8.26H0v3.117H18.078l-8.26,8.26L12,24,24,12Z"/>
+</svg>

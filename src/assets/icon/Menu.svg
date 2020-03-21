@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        fill: none;
+      }
+    </style>
+  </defs>
+  <g id="Menu" transform="translate(0.147 0.147)">
+    <path id="Menu-2" data-name="Menu" class="cls-1" d="M1.5,21a1.5,1.5,0,0,1,0-3h10.75a1.5,1.5,0,1,1,0,3Zm0-9a1.5,1.5,0,0,1,0-3h19a1.5,1.5,0,1,1,0,3Zm0-9a1.5,1.5,0,0,1,0-3h19a1.5,1.5,0,1,1,0,3Z" transform="translate(-0.146 0.853)"/>
+    <rect id="矩形_1446" data-name="矩形 1446" class="cls-2" width="19" height="19" transform="translate(-0.147 -0.147)"/>
+  </g>
+</svg>

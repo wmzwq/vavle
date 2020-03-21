@@ -1,0 +1,127 @@
+page-home {
+
+    .content-ios,
+    .content-md {
+      background-color: #F2F3F7;
+    }
+  
+    .banner {
+      background: url(../../assets/imgs/bg.svg) #234F9D no-repeat;
+      height: 30%;
+      display: flex;
+    }
+  
+    .num {
+      width: 60%;
+      display: flex;
+      margin: auto;
+      justify-content: space-between;
+    }
+  
+    .num1 p,
+    .num3 p {
+      font-size: 2rem;
+      color: #9CCDFF;
+      margin: .95rem 0;
+      text-align: center;
+    }
+  
+    .num1 span,
+    .num3 span {
+      font-size: 12px;
+      color: #9CCDFF;
+    }
+  
+    .num2 p {
+      font-size: 3rem;
+      color: white;
+      text-align: center;
+      margin: .4rem 0;
+    }
+  
+    .num2 span {
+      font-size: 12px;
+      color: #D3DCEB;
+    }
+  
+    .content-card {
+      background-color: #F2F3F7;
+      width: 100%;
+      height: 74%;
+      position: absolute;
+      bottom: 0;
+      border-radius: 26px 26px 0 0;
+    }
+  
+    .circle {
+   
+      width: 176px;
+      height: 176px;
+      background: url(../../assets/imgs/circle.svg) no-repeat;
+      margin: 32px auto;
+      overflow: hidden;
+      position: relative;
+    }
+.circle1{
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+   animation: alert 1s ease-in 0s infinite;
+ }
+
+    @keyframes alert {
+      0%{
+        opacity: 0;
+      }
+      50%{
+        opacity: 1;
+      }
+      100%{
+        opacity: 0;
+      }
+  }
+   
+
+  
+
+    .circle p {
+      font-size: 3.4rem;
+      color: #333;
+      text-align: center;
+      margin: 58px 0 6px 0;
+    }
+  
+    .circle span {
+      color: #707070;
+      display: inline-block;
+      margin: 0 58px;
+    }
+  
+    .charts {
+      height: 295px;
+      margin: 0 16px;
+      border-radius: 16px;
+      background-color: #fff;
+      overflow: hidden;
+    }
+  
+    .chart-hint {
+      width: 140px;
+      height: 20px;
+      margin: 12px 0 0 24px;
+      color: #B1B1B1;
+    }
+  
+    .dot {
+      width: 8px;
+      height: 8px;
+      background-color: #7598CE;
+      display: inline-block;
+      border-radius: 6px;
+      margin-right: 8px;
+    }
+  }
+  

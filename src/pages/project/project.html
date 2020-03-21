@@ -1,0 +1,60 @@
+<ion-content>
+    <ion-refresher (ionRefresh)="doRefresh($event)"> 
+        <ion-refresher-content
+            pullingIcon="arrow-dropdown"
+            pullingText="下拉刷新"
+            refreshingSpinner="circles"
+            refreshingText="刷新..."> 
+        </ion-refresher-content>
+        <ion-refresher-content > 
+    </ion-refresher-content>
+    </ion-refresher>
+  <div class="banner">
+    <p>项目管理</p>
+  </div>
+  <div class="content-card">
+    <div class="switch-btn" (click)="projectMap()"><img src="../../assets/icon/map.svg"></div>
+    
+    <div class="project" *ngFor="let item of projectList"  style="display: block">
+      <div class="info" (click)="gotoDevice(item)">
+        <img src="../../assets/icon/folder.svg"><span>{{item.F_ProjectName}}</span>
+      </div>
+      <div class="info" (click)="gotoDevice(item)">
+        <img src="../../assets/icon/places.svg"><span>{{item.F_ProjectAddness}}</span>
+      </div>
+      <button (click)="openScada(item)">scada</button>
+      <span class="divider"></span>
+      <ul class="status" (click)="gotoDevice(item)">
+        <li><p>{{item.F_AccountCount}}</p><span>设备总数</span></li>
+        <li><p>{{item.F_FaultCountToday}}</p><span>今日报警</span></li>
+        <li><p>{{item.F_OfflineCount}}</p><span>离线设备</span></li>
+      </ul>
+    </div>
+   
+    
+      <div id="allmap" class="map" style="width: 100%;height: 100%;margin-top: -10px;display: none"></div>
+
+      <div class="maptool2" style="display:none">
+          <div id="Button-GetLocation" class="up"  (click)="dw()"><img   class="Button-up" src="../../assets/imgs/dw.svg"></div>
+          
+          <div  id="Button-flashpage" class="up" style="margin-top: -4px;"  (click)="sx()"><img  class="Button-down" src="../../assets/imgs/refresh.svg"></div>
+      </div>
+
+      <div class="messagebar"  style="display: none" >
+          <div class="info" (click)="goDevice()">
+            <img src="../../assets/icon/folder.svg"><span id="project"></span>
+          </div>
+          <div class="info" (click)="goDevice()">
+            <img src="../../assets/icon/places.svg"><span id="company"></span>
+          </div>
+          <button class="Button-data"
+          style="font-size:12px" (click)="scada1()">scada</button>
+          <p style="display: none" id="f_id"></p>
+      </div>
+  
+ 
+
+  </div>
+
+
+</ion-content>

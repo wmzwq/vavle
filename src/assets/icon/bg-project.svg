@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #25509c;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <g id="组_29" data-name="组 29" transform="translate(-173 -613)">
+    <circle id="椭圆_4" data-name="椭圆 4" class="cls-1" cx="15" cy="15" r="15" transform="translate(173 613)"/>
+    <g id="Sections" transform="translate(181 621)">
+      <path id="路径_261" data-name="路径 261" class="cls-2" d="M0,0V3.5H14V0ZM2.625,2.625H.875V.875h1.75ZM0,8.75H14V5.25H0ZM.875,6.125h1.75v1.75H.875ZM0,14H14V10.5H0Zm.875-2.625h1.75v1.75H.875Z"/>
+    </g>
+  </g>
+</svg>

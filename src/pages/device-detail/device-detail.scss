@@ -1,0 +1,164 @@
+page-device-detail {
+
+  .content-ios,
+  .content-md {
+    background-color: #F2F3F7;
+    font-size: 1.2rem;
+  }
+
+  .banner,
+  .ave,
+  .status {
+    display: flex;
+  }
+
+  span {
+    display: inline-block;
+  }
+
+  .banner {
+    background: url(../../assets/imgs/banner.svg) #234F9D no-repeat;
+    height: 30%;
+  }
+
+  .banner p {
+    color: white;
+    font-weight: bold;
+    font-size: 1.6rem;
+    margin: 32px auto;
+  }
+
+  .back {
+    width: 22px;
+    height: 22px;
+    position: absolute;
+    margin: 32px 16px;
+  }
+
+  .content-card {
+    position: relative;
+    width: 100%;
+    height: 82%;
+    position: absolute;
+    bottom: 0;
+    padding: 0 24px;
+    border-radius: 26px 26px 0 0;
+    background-color: #F2F3F7;
+  }
+
+  .ave {
+    top: -52px;
+    position: absolute;
+    width: 80px;
+    height: 110px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 7px 10px rgba(158, 180, 214, .4);
+  }
+
+  .ave img {
+    height: 54%;
+    margin: auto;
+  }
+
+  .info {
+    position: absolute;
+    width: 60%;
+    left: 120px;
+    top: -62px;
+  }
+
+  .info p {
+    color: white;
+    height: 16px;
+    margin: 8px 0;
+  }
+
+  .info span {
+    width: 95%;
+    margin-top: 16px;
+    color: #707070;
+  }
+
+  .info button {
+    height: 28px;
+    background-color: #D8E3EE;
+    color: #4C699C;
+    border-radius: 20px;
+    font-size: 1.2rem;
+    margin: 8px 2px 0 2px;
+  }
+
+  .status {
+    width: 100%;
+    margin-top: 88px;
+    padding: 0;
+    justify-content: space-between;
+  }
+
+  .status li {
+    list-style: none;
+    float: left;
+    color: #707070;
+  }
+
+  li p {
+    text-align: center;
+    margin: 2px 0;
+  }
+
+  li img {
+    margin-right: 4px;
+  }
+
+  .title {
+    color: #707070;
+    margin: 8px 0 8px 6px;
+  }
+
+  .divider {
+    width: 100%;
+    height: 1px;
+    margin-top: 8px;
+    border-bottom: 2px dashed #dcdcdc;
+  }
+
+  .alarm {
+    width: 100%;
+    padding: 4px 16px;
+    border-radius: 10px;
+    background-color: #fff;
+    margin-bottom: 16px;
+    position: relative;
+  }
+
+  .row {
+    border-bottom: 1px solid #E5E5E5;
+    padding: 4px 0;
+  }
+
+  .row:last-child {
+    border-bottom: none;
+  }
+
+  ion-col p {
+    color: #BDBDBD;
+    margin: 0 0 4px 0;
+  }
+
+  ion-col span {
+    color: #333;
+  }
+
+  .dispose {
+    position: absolute;
+    right: 16px;
+    top: 16px;
+    width: 74px;
+    line-height: 30px;
+    border-radius: 24px;
+    background-color: #79AEF7;
+    color: white;
+    text-align: center;
+  }
+}

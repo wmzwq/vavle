@@ -1,0 +1,56 @@
+page-login {
+  .text {
+    padding: 4rem;
+  }
+
+  .login-text {
+    font-size: 2rem;
+    color: #4D84FE;
+    font-weight: bold;
+  }
+
+  .login-hint {
+    font-size: 1.6rem;
+    color: #A2A7B8;
+  }
+
+  .account,
+  .password {
+    width: 264px;
+    height: 50px;
+    background-color: #F6F7F9;
+    border: solid 2px #F6F6F6;
+    line-height: 50px;
+    color: #707070;
+    border-radius: 34px;
+    margin: 34px auto;
+    display: flex;
+  }
+  .text-input-ios,.text-input-md{
+    margin: 0;
+  }
+
+  .account img,
+  .password img {
+    float: left;
+    margin: 1.4rem;
+  }
+
+  .account span,
+  .password span {
+    float: left;
+  }
+
+  .login-btn {
+    width: 70px;
+    height: 70px;
+    border-radius: 40px;
+    background: #69A8FF;
+    margin: 0 auto;
+    display: flex;
+  }
+
+  .login-btn img {
+    margin: auto;
+  }
+}

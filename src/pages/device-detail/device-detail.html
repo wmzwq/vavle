@@ -1,0 +1,110 @@
+<ion-content>
+  <div class="banner">
+    <div class="back" (click)="back()"><img src="assets/imgs/back.svg"></div>
+    <p>设备详情</p>
+  </div>
+  <div class="content-card">
+    <div class="ave"><img src="../../assets/imgs/equip_valve.png"></div>
+    <div class="info">
+      <p id="AccountName">{{name}}</p>
+      <p>{{number}}</p>
+      <span>{{address}}</span>
+      <button>{{TypeName}}</button>
+      <button *ngIf="type==5" (click)="SwitchControl()">远程控制</button>
+      <button *ngIf="type==1" (click)="actuator()">远程控制</button>
+    </div>
+    <ul class="status">
+      <li *ngIf="type==0">
+        <img src="../../assets/icon/dot.svg"><span *ngIf="ScadaEntity!=null">{{CH4}}</span>
+        <p>甲烷</p>
+      </li>
+      <li *ngIf="type==0">
+        <img src="../../assets/icon/dot.svg"><span *ngIf="ScadaEntity!=null">{{H2S}}</span>
+        <p>硫化氢</p>
+      </li>
+      <li *ngIf="type==0||type==3">
+        <img src="../../assets/icon/dot.svg"><span *ngIf="ScadaEntity!=null">{{temperature}}</span>
+        <p>温度</p>
+      </li>
+      <li *ngIf="type==3">
+        <img src="../../assets/icon/dot.svg"><span *ngIf="ScadaEntity!=null">{{Humidity}}</span>
+        <p>湿度</p>
+      </li>
+      <li *ngIf="type==0&&MC==1">
+          <img src="../../assets/icon/dot.svg"><span *ngIf="ScadaEntity!=null">异常</span>
+          <p>井盖异动</p>
+        </li>
+        <li *ngIf="type==0&&MC==0">
+          <img src="../../assets/icon/dot.svg"><span *ngIf="ScadaEntity!=null">正常</span>
+          <p>井盖异动</p>
+        </li>
+        <li *ngIf="type==5">
+          <img src="../../assets/icon/dot.svg"><span *ngIf="ScadaEntity!=null">{{F_Pressure2}}</span>
+          <p>压力2</p>
+        </li>
+        <li *ngIf="type==5">
+          <img src="../../assets/icon/dot.svg"><span *ngIf="ScadaEntity!=null">{{F_Pressure}}</span>
+          <p>压力1</p>
+        </li>
+        <li *ngIf="type==5">
+          <img src="../../assets/icon/dot.svg"><span *ngIf="ScadaEntity!=null" >{{F_ActuatorLocation}}</span>
+          <p>执行器位置</p>
+        </li>
+        <li *ngIf="type==5">
+          <img src="../../assets/icon/dot.svg"><span *ngIf="ScadaEntity!=null">{{F_BatteryVoltage}}</span>
+          <p>电池电压</p>
+        </li>
+        <li *ngIf="type==5">
+          <img src="../../assets/icon/dot.svg"><span *ngIf="ScadaEntity!=null">{{F_InputVoltage}}</span>
+          <p>输入电压</p>
+        </li>
+        <li *ngIf="type==1">
+        <ng-container *ngIf="ScadaEntity!=null&&ActuatorLocation==1">
+            <img src="../../assets/icon/dot.svg"><span >打开</span>
+            <p>开关状态</p>            
+         </ng-container>
+          </li>
+          <li *ngIf="type==1">
+            <ng-container *ngIf="ScadaEntity!=null&&ActuatorLocation==0">
+            <img src="../../assets/icon/dot.svg"><span >关闭</span>
+            <p>开关状态</p>
+          </ng-container>
+          </li>    
+    </ul>
+    <span class="divider"></span>
+    <p class="title" >历史报警</p>
+    <div id="default" style="display:none;text-align: center;margin-top: 74px;">
+        <img src="assets/imgs/no.png" class="no">
+        <p style="color:#5C6784;font-size: 18px ">当前状态良好，暂无报警</p>
+      </div>
+    <ion-grid class="alarm" *ngFor="let item of detailsList">
+      
+      <div class="dispose" (click)="disposal(item)" *ngIf="item.F_AlarmRemove==0" >处置</div>
+      <div class="dispose" style="color:black !important;background-color: white" *ngIf="item.F_AlarmRemove==1">已处置</div>
+      <ion-row>
+        <ion-col col-9>
+          <p>报警内容</p><span>{{(item.F_FaultContent)+'\xa0'+(item.F_FaultReason)}}</span>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col col-6>
+          <p>报警时间</p><span>{{item.F_Date}}</span>
+        </ion-col>
+        <ion-col col-6>
+          <p>报警值</p><span>{{(item.F_FaultNumerical).toFixed(1)}}</span>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col col-6>
+          <p>处置时间</p><span>{{item.F_AlarmDate}}</span>
+        </ion-col>
+        <ion-col col-6 *ngIf="item.F_AlarmRemove==1">
+            <p>处置状态</p><span>已处置</span>
+          </ion-col>
+          <ion-col col-6 *ngIf="item.F_AlarmRemove==0">
+              <p>处置状态</p><span>未处置</span>
+            </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+</ion-content>

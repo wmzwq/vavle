@@ -1,0 +1,7 @@
+{
+  "name": "valve",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}
